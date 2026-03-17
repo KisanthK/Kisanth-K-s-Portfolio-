@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisanth | Web Agency Founder & Systems Architect</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+    <!-- ✅ Added cursor-glow element that JS requires -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="cursor-outer" aria-hidden="true"></div>
+    <div class="cursor-inner" aria-hidden="true"></div>
+
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="noise" aria-hidden="true"></div>
+
+    <nav id="nav">
+        <div class="nav-container">
+            <div class="logo">K.<span>ARCHITECT</span></div>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <a href="#about">The Journey</a>
+                <a href="#work">Case Studies</a>
+                <a href="mailto:your-email@example.com" class="nav-cta">Let's Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <div class="badge">COMPUTER SCIENCE GRADUATE &amp; FOUNDER</div>
+                    <h1>
+                        <span class="h1-line"><span class="h1-inner">Scaling Businesses</span></span>
+                        <span class="h1-line"><span class="h1-inner vibrant-text">Through Code.</span></span>
+                    </h1>
+                    <p class="hero-desc">I'm a recently graduated CS student turned entrepreneur. I run a specialized
+                        web development and SEO agency, helping businesses modernize through custom AI implementation
+                        and high-performance digital systems.</p>
+                    <div class="hero-btns">
+                        <a href="#work" class="btn-primary">View My Work</a>
+                        <a href="mailto:your-email@example.com" class="btn-secondary">Let's Connect</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="image-card-wrapper" id="heroCardWrapper">
+                        <div class="image-card">
+                            <img src="kisanth.jpg" alt="Kisanth">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-text">
+                    <span class="tag-label">MY JOURNEY</span>
+                    <h2 class="about-heading">From University to <span>Agency Founder.</span></h2>
+                    <p>After graduating with a degree in Computer Science, I took the entrepreneurial route by launching
+                        my own agency. My focus is simple: building web solutions that actually work for the people
+                        using them. Whether it's high-level SEO or integrating AI to automate workplace tasks, I bridge
+                        the gap between technical complexity and business growth.</p>
+
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <h4><span class="skill-dot"></span>AI Implementation</h4>
+                            <p>Currently specializing in custom AI tools designed to make repetitive workplace tasks
+                                easier and more efficient for modern businesses.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4><span class="skill-dot"></span>SaaS Development</h4>
+                            <p>Beyond agency work, I have several SaaS projects in active development, focusing on
+                                scalable infrastructure and user-centric design.</p>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <p>I'm always open to discussing new business ventures, assisting in growth strategies, or
+                            exploring how technology can solve your specific bottlenecks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="grid-section">
+            <div class="section-header">
+                <span class="tag-label">SELECTED WORK</span>
+                <h2>Case Studies</h2>
+            </div>
+
+            <div class="bento-grid">
+
+                <a href="https://kisanthk.github.io/KN-Law-Demo-Website-/index.html" class="bento-item featured"
+                    target="_blank" rel="noopener">
+                    <div class="card-image"><img src="law_screenshot.jpg" alt="Legal Tech"></div>
+                    <div class="card-overlay"></div>
+                    <div class="item-content">
+                        <span class="tag">LEGAL TECH</span>
+                        <h3>KN Law Concept</h3>
+                        <p>A high-end legal portal designed with ergonomic data structures for lawyers.</p>
+                        <span class="card-cta">View Project <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+                <a href="https://kisanthk.github.io/publicbusinessaccountingDEMO/" class="bento-item" target="_blank"
+                    rel="noopener">
+                    <div class="card-image"><img src="accounting_screenshot.jpg" alt="Fintech"></div>
+                    <div class="card-overlay"></div>
+                    <div class="item-content">
+                        <span class="tag">FINTECH</span>
+                        <h3>Business Accounting</h3>
+                        <p>Real-time financial tracking and visualization.</p>
+                        <span class="card-cta">View Project <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+                <a href="https://kisanthk.github.io/autoShopDemo/" class="bento-item" target="_blank" rel="noopener">
+                    <div class="card-image"><img src="autoshop_screenshot.jpg" alt="Automotive"></div>
+                    <div class="card-overlay"></div>
+                    <div class="item-content">
+                        <span class="tag">AUTOMOTIVE</span>
+                        <h3>Auto Shop System</h3>
+                        <p>Streamlined booking and customer flow.</p>
+                        <span class="card-cta">View Project <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+                <a href="https://kisanthk.github.io/2379-burlington-army-cadets-DEMO-Website-/index.html"
+                    class="bento-item wide" target="_blank" rel="noopener">
+                    <div class="card-image"><img src="army_screenshot.jpg" alt="Community"></div>
+                    <div class="card-overlay"></div>
+                    <div class="item-content">
+                        <span class="tag">GOVERNMENT / COMMUNITY</span>
+                        <h3>Army Cadets Portal</h3>
+                        <p>Accessibility-first hub for community engagement.</p>
+                        <span class="card-cta">View Project <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+                <a href="https://kisanthk.github.io/DEMO-Main-st-optometry-concept---UPDATED/" class="bento-item"
+                    target="_blank" rel="noopener">
+                    <div class="card-image"><img src="optometry.jpg" alt="Healthcare"></div>
+                    <div class="card-overlay"></div>
+                    <div class="item-content">
+                        <span class="tag">HEALTHCARE</span>
+                        <h3>Optometry Concept</h3>
+                        <p>Modern patient intake and management.</p>
+                        <span class="card-cta">View Project <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+                <a href="https://kisanthk.github.io/K-Bro-s-Interlock-Repair-/" class="bento-item wide kbros-card"
+                    target="_blank" rel="noopener">
+                    <div class="card-image kbros-image">
+                        <img src="kBros.png" alt="K Bros Landscaping">
+                    </div>
+                    <div class="card-overlay kbros-overlay"></div>
+                    <div class="item-content">
+                        <span class="tag kbros-tag">LANDSCAPING &amp; LOCAL SEO</span>
+                        <h3>K Bros Landscaping</h3>
+                        <p>Conversion-first landing page for an interlock repair company — interactive before/after
+                            slider, 3-stage process walkthrough, and local SEO targeting Newmarket &amp; Aurora.</p>
+                        <span class="card-cta kbros-cta">View Case Study <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="contact-footer">
+        <span class="footer-eyebrow">GET IN TOUCH</span>
+        <h3>Ready to scale?</h3>
+        <p>I'm always welcome to the opportunity to talk about new business ventures or assisting in business growth.</p>
+        <a href="mailto:your-email@example.com" class="footer-btn">Start a Conversation</a>
+        <p class="footer-copy">&copy; 2025 Kisanth. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <style>
+        /* ── Cursor Glow ─────────────────────────────── */
+        .cursor-glow {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        /* ── K Bros card overrides ───────────────────── */
+        .kbros-image {
+            background: #060f06;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .kbros-image img {
+            object-fit: contain !important;
+            padding: 28px 40px;
+            opacity: 0.82 !important;
+            transition: opacity 0.5s ease, transform 0.65s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        }
+
+        .kbros-card:hover .kbros-image img {
+            opacity: 1 !important;
+            transform: scale(1.04) !important;
+        }
+
+        .kbros-overlay {
+            background: linear-gradient(to top,
+                    rgba(3, 12, 3, 0.97) 0%,
+                    rgba(3, 12, 3, 0.62) 44%,
+                    rgba(3, 12, 3, 0.18) 100%) !important;
+        }
+
+        .kbros-card:hover .kbros-overlay {
+            background: linear-gradient(to top,
+                    rgba(3, 12, 3, 0.92) 0%,
+                    rgba(3, 12, 3, 0.35) 54%,
+                    rgba(3, 12, 3, 0.06) 100%) !important;
+        }
+
+        .kbros-card:hover {
+            border-color: rgba(74, 222, 128, 0.25) !important;
+            box-shadow: 0 32px 70px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(74, 222, 128, 0.12) !important;
+        }
+
+        .kbros-tag {
+            color: #4ade80 !important;
+        }
+
+        .kbros-cta {
+            color: #4ade80 !important;
+        }
+    </style>
+</body>
+
+</html>
